@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      display: grid;
+      display: grid;
+      place-items: start center;
+      margin-top: 10%;
+      background-color: hsl(225, 100%, 94%);
+    }
+    #card-body1{
+      background-color:hsl(225, 100%, 98%) ;
+      margin-inline-start: 10%;
+      margin-inline-end: 10%;
+      
+    }
+    #card-title{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+      padding-top: 5%;
+    }
+    #card-text1{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+    }
+    #img1{
+      margin-top: 15%;
+    }
+    #change{
+      margin-top: 35%;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 11px;
+      color: hsl(245, 75%, 52%);
+    }
+    #span1{
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 10%;
+    }
+    #span2{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      color: hsl(224, 23%, 55%);
+      margin-left: 10%;
+    }
+    #button1{
+      background-color: hsl(245, 75%, 52%);
+      color:white;
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      width:18rem;
+      box-shadow: 10px 10px hsl(225, 100%, 94%);
+    }
+    #button1:hover{
+      background-color: hsl(223, 47%, 23%);
+    }
+    #button2{
+      font-family: 'Red Hat Display', sans-serif;
+      color: hsl(224, 23%, 55%);
+      font-size: 14px;
+      padding-top: 4%;
+    }
+    #button2:hover{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="card " style="width: 22rem;">
+  <img src="illustration-hero.svg" class="card-img-top" alt="...">
+  <div  class="card-body text-center">
+    <p id="card-title" class="card-title">Order Summary</p>
+    <p id="card-text1" class="card-text">You can now listen to millions of songs, 
+      audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+    </div>
+    <div id="card-body1" class="card-body rounded-4">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img id="img1" src="icon-music.svg" 
+          class="img-fluid rounded-circle" alt="Image of a note">
+        </div>
+        <div class="col-md">
+          <div class="row">
+            <div class="col"><p class="card-tex">
+            <span id="span1">Annual Plan</span>
+            <br><span id="span2"> $59.99/year</span></p>
+          </div>
+            <div class="col-4"><p id="change" class="card-text">
+              <a href="">Change</a></p>
+          </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="card-body text-center">
+      <button id="button1" class="btn">Proceed to Payment</button>
+      <button id="button2" class="btn">Cancel Order</button>
+    </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Belmin Trokic</a>.
+  </div>
+</body>
+</html>
